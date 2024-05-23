@@ -11,9 +11,9 @@ import java.util.stream.Collectors;
 public class ProductService {
 
     private List<Product> allProducts = Arrays.asList(
-            new Product(1L, "Laptop", 999.99),
-            new Product(2L, "Phone", 499.99),
-            new Product(3L, "Tablet", 299.99)
+            new Product(1L, "Tablet", 2999.99),
+            new Product(2L, "Phone", 699.99),
+            new Product(3L, "Laptop", 399.99)
     );
 
     public List<Product> getAllProducts() {
