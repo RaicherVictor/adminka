@@ -19,8 +19,8 @@ public class UserController {
     @GetMapping("/")
     public String getUsers(Model model) {
         List<User> users = Arrays.asList(
-                new User(1L, "Hierarch Artanis", "Artanis@xto.com", productService.getProductsByIds(Arrays.asList(1L, 3L))),
-                new User(2L, "Sarah Kerrigan", "Sarah@test.com", productService.getProductsByIds(Arrays.asList(2L, 3L)))
+                new User(1L, "Korlis Amber", "Amber@xto.com", productService.getProductsByIds(Arrays.asList(1L, 3L))),
+                new User(2L, "Victor Blazing", "Blazing@test.com", productService.getProductsByIds(Arrays.asList(2L, 3L)))
         );
         model.addAttribute("users", users);
         return "users";
